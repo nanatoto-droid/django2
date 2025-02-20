@@ -3,8 +3,8 @@ from giftos import views
 
 urlpatterns = [
     path('',views.index,name='index'),
-    path('',views.shop,name='shop'),
-    path('',views.testimonial,name='testimonial'),
-    path('',views.contact, name='contact'),
-    path('',views.why,name='why'),
+    path('shop/',views.shop,name='shop'),
+    path('testimonial/',views.testimonial,name='testimonial'),
+    path('contact/',views.contact, name='contact'),
+    path('why/',views.why,name='why'),
 ]

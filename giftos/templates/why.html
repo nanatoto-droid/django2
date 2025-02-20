@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html>
 
@@ -11,7 +12,7 @@
   <meta name="keywords" content="" />
   <meta name="description" content="" />
   <meta name="author" content="" />
-  <link rel="shortcut icon" href="images/trinkets.jpg" type="image/x-icon">
+  <link rel="shortcut icon" href="{% static 'images/trinkets.jpg' %}" type="image/x-icon">
 
   <title>
     timeless trinkets
@@ -21,21 +22,21 @@
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
 
   <!-- bootstrap core css -->
-  <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+  <link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.css' %}" />
 
   <!-- Custom styles for this template -->
-  <link href="css/style.css" rel="stylesheet" />
+  <link href="{% static 'css/style.css' %}" rel="stylesheet" />
   <!-- responsive style -->
-  <link href="css/responsive.css" rel="stylesheet" />
+  <link href="{% static 'css/responsive.css' %}" rel="stylesheet" />
 </head>
 
 <body>
   <div class="hero_area">
     <!-- header section strats -->
     <header class="header_section">
-      <img src="images/trinkets.jpg" alt="" width="100%" height="500">
+      <img src="{% static 'images/trinkets.jpg' %}" alt="" width="100%" height="500">
       <nav class="navbar navbar-expand-lg custom_nav-container ">
-        <a class="navbar-brand" href="index.html">
+        <a class="navbar-brand" href="{% url 'index' %}">
 <!--          <span>-->
 <!--            Giftos-->
 <!--          </span>-->
@@ -47,25 +48,25 @@
         <div class="collapse navbar-collapse innerpage_navbar" id="navbarSupportedContent">
           <ul class="navbar-nav  ">
             <li class="nav-item ">
-              <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+              <a class="nav-link" href="{% url 'index' %}">Home <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="shop.html">
+              <a class="nav-link" href="{% url 'shop' %}">
                 Shop
               </a>
             </li>
             <li class="nav-item active">
-              <a class="nav-link" href="why.html">
+              <a class="nav-link" href="{% url 'why' %}">
                 Why Us
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="testimonial.html">
+              <a class="nav-link" href="{% url 'testimonial' %}">
                 Testimonial
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="contact.html">Contact Us</a>
+              <a class="nav-link" href="{% url 'contact' %}">Contact Us</a>
             </li>
           </ul>
 <!--          <div class="user_option">-->
@@ -349,18 +350,18 @@
   <section class="info_section  layout_padding2-top">
     <div class="social_container">
       <div class="social_box">
-        <a href="">
-          <i class="fa fa-facebook" aria-hidden="true"></i>
-        </a>
-        <a href="">
-          <i class="fa fa-twitter" aria-hidden="true"></i>
-        </a>
-        <a href="">
+{#        <a href="">#}
+{#          <i class="fa fa-facebook" aria-hidden="true"></i>#}
+{#        </a>#}
+{#        <a href="">#}
+{#          <i class="fa fa-twitter" aria-hidden="true"></i>#}
+{#        </a>#}
+        <a href="https://www.instagram.com/tim.elesstrinkets/">
           <i class="fa fa-instagram" aria-hidden="true"></i>
         </a>
-        <a href="">
-          <i class="fa fa-youtube" aria-hidden="true"></i>
-        </a>
+{#        <a href="">#}
+{#          <i class="fa fa-youtube" aria-hidden="true"></i>#}
+{#        </a>#}
       </div>
     </div>
     <div class="info_container ">
@@ -438,11 +439,11 @@
   <!-- end info section -->
 
 
-  <script src="js/jquery-3.4.1.min.js"></script>
-  <script src="js/bootstrap.js"></script>
+  <script src="{% static 'js/jquery-3.4.1.min.js' %}"></script>
+  <script src="{% static 'js/bootstrap.js' %}"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js">
   </script>
-  <script src="js/custom.js"></script>
+  <script src="{% static 'js/custom.js' %}"></script>
 
 </body>
 
