@@ -210,11 +210,61 @@
           <div class="box">
             <a href="">
               <div class="img-box">
-                <img src="{% static 'images/p1.png' %}" alt="">
+                <img src="{% static 'images/shirt green.png' %}" alt="">
               </div>
               <div class="detail-box">
                 <h6>
-                  Ring
+                  Green T-shirt
+                </h6>
+                <h6>
+                  Price
+                  <span>
+                    Ksh 550
+                  </span>
+                </h6>
+              </div>
+              <div class="new">
+                <span>
+                  New
+                </span>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-3">
+          <div class="box">
+            <a href="">
+              <div class="img-box">
+                <img src="{% static 'images/green t shirt.png' %}" alt="">
+              </div>
+              <div class="detail-box">
+                <h6>
+                  T-shirt
+                </h6>
+                <h6>
+                  Price
+                  <span>
+                    Ksh 450
+                  </span>
+                </h6>
+              </div>
+              <div class="new">
+                <span>
+                  New
+                </span>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-3">
+          <div class="box">
+            <a href="">
+              <div class="img-box">
+                <img src="{% static 'images/pants.png' %}" alt="">
+              </div>
+              <div class="detail-box">
+                <h6>
+                  low rise khaki
                 </h6>
                 <h6>
                   Price
@@ -235,16 +285,16 @@
           <div class="box">
             <a href="">
               <div class="img-box">
-                <img src="{% static 'images/p2.png' %}" alt="">
+                <img src="{% static 'images/red.png' %}" alt="">
               </div>
               <div class="detail-box">
                 <h6>
-                  Watch
+                 Stockholm skirt
                 </h6>
                 <h6>
                   Price
                   <span>
-                    Ksh 4500
+                    ksh 650
                   </span>
                 </h6>
               </div>
@@ -260,16 +310,16 @@
           <div class="box">
             <a href="">
               <div class="img-box">
-                <img src="{% static 'images/p3.png' %}" alt="">
+                <img src="{% static 'images/white sweter.png' %}" alt="">
               </div>
               <div class="detail-box">
                 <h6>
-                  Teddy Bear
+                  white sweater
                 </h6>
                 <h6>
                   Price
                   <span>
-                    Ksh 500
+                    ksh 700
                   </span>
                 </h6>
               </div>
@@ -285,36 +335,11 @@
           <div class="box">
             <a href="">
               <div class="img-box">
-                <img src="{% static 'images/p4.png' %}" alt="">
+                <img src="{% static 'images/white top.png' %}" alt="">
               </div>
               <div class="detail-box">
                 <h6>
-                  Flower Bouquet
-                </h6>
-                <h6>
-                  Price
-                  <span>
-                    ksh 350
-                  </span>
-                </h6>
-              </div>
-              <div class="new">
-                <span>
-                  New
-                </span>
-              </div>
-            </a>
-          </div>
-        </div>
-        <div class="col-sm-6 col-md-4 col-lg-3">
-          <div class="box">
-            <a href="">
-              <div class="img-box">
-                <img src="{% static 'images/p5.png' %}" alt="">
-              </div>
-              <div class="detail-box">
-                <h6>
-                  Teddy Bear
+                  Whimsical corset
                 </h6>
                 <h6>
                   Price
@@ -335,16 +360,16 @@
           <div class="box">
             <a href="">
               <div class="img-box">
-                <img src="{% static 'images/p6.png' %}" alt="">
+                <img src="{% static 'images/skirt.png' %}" alt="">
               </div>
               <div class="detail-box">
                 <h6>
-                  Flower Bouquet
+                  Mini ruffle skirt
                 </h6>
                 <h6>
                   Price
                   <span>
-                    ksh 780
+                    ksh 400
                   </span>
                 </h6>
               </div>
@@ -360,41 +385,16 @@
           <div class="box">
             <a href="">
               <div class="img-box">
-                <img src="{% static 'images/p7.png' %}" alt="">
+                <img src="{% static 'images/green swetar.png' %}" alt="">
               </div>
               <div class="detail-box">
                 <h6>
-                  Watch
+                Green pearl cardigan
                 </h6>
                 <h6>
                   Price
                   <span>
-                    ksh 4000
-                  </span>
-                </h6>
-              </div>
-              <div class="new">
-                <span>
-                  New
-                </span>
-              </div>
-            </a>
-          </div>
-        </div>
-        <div class="col-sm-6 col-md-4 col-lg-3">
-          <div class="box">
-            <a href="">
-              <div class="img-box">
-                <img src="{% static 'images/p8.png' %}" alt="">
-              </div>
-              <div class="detail-box">
-                <h6>
-                  Ring
-                </h6>
-                <h6>
-                  Price
-                  <span>
-                    ksh 1900
+                    ksh 800
                   </span>
                 </h6>
               </div>
@@ -408,7 +408,7 @@
         </div>
       </div>
       <div class="btn-box">
-        <a href="shop.html">
+        <a href="{% url 'shop' %}">
           View All Products
         </a>
       </div>
